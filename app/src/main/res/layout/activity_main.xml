@@ -1,0 +1,1245 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    tools:context=".MainActivity"
+    android:background="@drawable/ee"
+
+    >
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/cc"
+        android:layout_height="50dp">
+
+        <TextView
+            android:id="@+id/hiragana"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:text="Hiragana"
+            android:visibility="gone"
+            android:textColor="#F44336"
+            android:textSize="36sp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/katakana"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:text="Katakana"
+
+
+            android:textColor="#F44336"
+            android:textSize="36sp">
+
+        </TextView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="528dp">
+   <ScrollView
+
+       android:id="@+id/scrollview2"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       >
+       <TableLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:shrinkColumns="*"
+           >
+
+           <TableRow
+               android:weightSum="5"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent">
+
+               <Button
+                   android:id="@+id/a"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:gravity="center"
+                   android:text="ア \na"
+                   android:textColor="#F44336"
+
+                   />
+
+               <Button
+                   android:id="@+id/i"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:gravity="center"
+                   android:text="イ \ni"
+                   android:textColor="#F44336" />
+
+               <Button
+                   android:layout_weight="1"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/u"
+                   android:gravity="center"
+                   android:text="ウ \nu"
+                   android:textColor="#F44336" />
+
+               <Button
+                   android:layout_weight="1"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/e"
+                   android:text="エ \ne"
+                   android:textColor="#F44336" />
+
+               <Button
+                   android:layout_weight="1"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/o"
+                   android:text="オ \no"
+                   android:textColor="#F44336" />
+           </TableRow>
+
+           <TableRow
+               android:weightSum="5"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               >
+
+
+               <Button
+                   android:layout_weight="1"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/ka"
+                   android:gravity="center"
+                   android:text="カ \nka"
+                   
+                   android:textColor="#F44336" />
+
+               <Button
+                   android:layout_weight="1"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/ki"
+                   android:gravity="center"
+                   android:text="キ \nki"
+                   android:textColor="#F44336" />
+
+               <Button
+                   android:layout_weight="1"
+                   android:id="@+id/ku"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:gravity="center"
+                   android:text="ク \nku"
+                   android:textColor="#F44336" />
+
+               <Button
+                   android:layout_weight="1"
+                   android:id="@+id/ke"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:gravity="center"
+                   android:text="ケ \nke"
+                   android:textColor="#F44336" />
+
+               <Button
+                   android:layout_weight="1"
+                   android:id="@+id/ko"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:gravity="center"
+                   android:text="コ \nko"
+                   android:textColor="#F44336" />
+
+           </TableRow>
+
+           <TableRow
+               android:weightSum="5"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               >
+               <Button
+                   android:layout_weight="1"
+                   android:id="@+id/sa"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:gravity="center"
+                   android:text="サ \nsa"
+                   android:textColor="#F44336" />
+
+               <Button
+                   android:layout_weight="1"
+                   android:id="@+id/shi"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:gravity="center"
+                   android:text="シ \nshi"
+                   android:textColor="#F44336" />
+
+               <Button
+                   android:layout_weight="1"
+                   android:id="@+id/su"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:gravity="center"
+                   android:text="ス \nsu"
+                   android:textColor="#F44336" />
+
+               <Button
+                   android:layout_weight="1"
+                   android:id="@+id/se"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:gravity="center"
+                   android:text="セ \nse"
+                   android:textColor="#F44336" />
+
+               <Button
+                   android:layout_weight="1"
+                   android:id="@+id/so"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:gravity="center"
+                   android:text="ソ \nso"
+                   android:textColor="#F44336" />
+           </TableRow>
+
+           <TableRow
+               android:weightSum="5"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               >
+
+               <Button
+                   android:layout_weight="1"
+                   android:id="@+id/ta"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:gravity="center"
+                   android:text="タ \nta"
+                   android:textColor="#F44336" />
+
+               <Button
+                   android:layout_weight="1"
+                   android:id="@+id/chi"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:gravity="center"
+                   android:text="チ \nchi"
+                   android:textColor="#F44336" />
+
+               <Button
+                   android:layout_weight="1"
+                   android:id="@+id/tsu"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:gravity="center"
+                   android:text="ツ \ntsu"
+                   android:textColor="#F44336" />
+
+               <Button
+                   android:layout_weight="1"
+                   android:id="@+id/te"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:gravity="center"
+                   android:text="テ \nte"
+                   android:textColor="#F44336" />
+
+               <Button
+                   android:layout_weight="1"
+                   android:id="@+id/to"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:gravity="center"
+                   android:text=" ト \nto"
+                   android:textColor="#F44336" />
+           </TableRow>
+
+           <TableRow
+               android:weightSum="5"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               >
+
+               <Button
+                   android:layout_weight="1"
+                   android:id="@+id/na"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:gravity="center"
+                   android:text="ナ \nna"
+                   android:textColor="#F44336" />
+
+               <Button
+                   android:layout_weight="1"
+                   android:id="@+id/ni"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:gravity="center"
+                   android:text="ニ \nni"
+                   android:textColor="#F44336" />
+
+               <Button
+                   android:layout_weight="1"
+                   android:id="@+id/nu"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:gravity="center"
+                   android:text="ヌ \nnu"
+                   android:textColor="#F44336" />
+
+               <Button
+                   android:layout_weight="1"
+                   android:id="@+id/ne"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:gravity="center"
+                   android:text="ネ \nne"
+                   android:textColor="#F44336" />
+
+               <Button
+                   android:layout_weight="1"
+                   android:id="@+id/no"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:gravity="center"
+                   android:text="ノ \nno"
+                   android:textColor="#F44336" />
+           </TableRow>
+
+           <TableRow
+               android:weightSum="5"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               >
+
+               <Button
+                   android:layout_weight="1"
+                   android:id="@+id/ha"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:gravity="center"
+                   android:text="ハ \nha"
+                   android:textColor="#F44336" />
+
+               <Button
+                   android:layout_weight="1"
+                   android:id="@+id/hi"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:gravity="center"
+                   android:text="ヒ \nhi"
+                   android:textColor="#F44336" />
+
+               <Button
+                   android:layout_weight="1"
+                   android:id="@+id/fu"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:gravity="center"
+                   android:text="フ \nfu"
+                   android:textColor="#F44336" />
+
+               <Button
+                   android:layout_weight="1"
+                   android:id="@+id/he"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:gravity="center"
+                   android:text="ヘ \nhe"
+                   android:textColor="#F44336" />
+
+               <Button
+                   android:layout_weight="1"
+                   android:id="@+id/ho"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:gravity="center"
+                   android:text="ホ \nho"
+                   android:textColor="#F44336" />
+           </TableRow>
+
+           <TableRow
+               android:weightSum="5"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               >
+
+               <Button
+                   android:layout_weight="1"
+                   android:id="@+id/ma"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:gravity="center"
+                   android:text="マ \nma"
+                   android:textColor="#F44336" />
+
+               <Button
+                   android:layout_weight="1"
+                   android:id="@+id/mi"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:gravity="center"
+                   android:text="ミ \nmi"
+                   android:textColor="#F44336" />
+
+               <Button
+                   android:layout_weight="1"
+                   android:id="@+id/mu"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:gravity="center"
+                   android:text="ム \nmu"
+                   android:textColor="#F44336" />
+
+               <Button
+                   android:layout_weight="1"
+                   android:id="@+id/me"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:gravity="center"
+                   android:text="メ \nme"
+                   android:textColor="#F44336" />
+
+               <Button
+                   android:layout_weight="1"
+                   android:id="@+id/mo"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:gravity="center"
+                   android:text="モ \nmo"
+                   android:textColor="#F44336" />
+           </TableRow>
+
+           <TableRow
+               android:weightSum="5"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               >
+
+               <Button
+                   android:layout_weight="1"
+                   android:id="@+id/ya"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:gravity="center"
+                   android:text="ヤ \nya"
+                   android:textColor="#F44336" />
+
+               <Button
+android:layout_weight="1"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:background="#00000000"
+                   android:gravity="center"
+                   android:textColor="#F44336" />
+
+               <Button
+                   android:layout_weight="1"
+                   android:id="@+id/yu"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:gravity="center"
+                   android:text="ユ \nyu"
+                   android:textColor="#F44336" />
+
+               <Button
+                   android:layout_weight="1"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:background="#00000000"
+                   android:gravity="center" />
+
+               <Button
+                   android:layout_weight="1"
+                   android:id="@+id/yo"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:gravity="center"
+                   android:text="ヨ \nyo"
+                   android:textColor="#F44336" />
+
+           </TableRow>
+
+           <TableRow
+               android:weightSum="5"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               >
+
+               <Button
+                   android:layout_weight="1"
+                   android:id="@+id/ra"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:gravity="center"
+                   android:text="ラ \nra"
+                   android:textColor="#F44336" />
+
+               <Button
+                   android:layout_weight="1"
+                   android:id="@+id/ri"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:gravity="center"
+                   android:text="リ \nri"
+                   android:textColor="#F44336"
+
+                   />
+
+               <Button
+                   android:layout_weight="1"
+                   android:id="@+id/ru"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:gravity="center"
+                   android:text="ル \nru"
+                   android:textColor="#F44336" />
+
+               <Button
+                   android:layout_weight="1"
+                   android:id="@+id/re"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:gravity="center"
+                   android:text="レ \nre"
+                   android:textColor="#F44336"
+
+                   />
+
+               <Button
+                   android:layout_weight="1"
+                   android:id="@+id/ro"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:gravity="center"
+                   android:text="ロ \nro"
+                   android:textColor="#F44336" />
+
+           </TableRow>
+
+           <TableRow
+               android:weightSum="5"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               >
+
+               <Button
+                   android:layout_weight="1"
+                   android:id="@+id/wa"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:gravity="center"
+                   android:text="ワ \nwa"
+                   android:textColor="#F44336" />
+
+               <Button
+                   android:layout_weight="1"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:background="#00000000"
+                   android:gravity="center" />
+
+               <Button
+                   android:layout_weight="1"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:background="#00000000"
+                   android:gravity="center" />
+
+               <Button
+                   android:layout_weight="1"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:background="#00000000"
+                   android:gravity="center" />
+
+               <Button
+                   android:layout_weight="1"
+                   android:id="@+id/wo"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:gravity="center"
+                   android:text="ヲ \nwo"
+                   android:textColor="#F44336" />
+           </TableRow>
+
+           <TableRow
+               android:weightSum="5"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               >
+
+               <Button
+                   android:layout_weight="1"
+                   android:id="@+id/n"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:gravity="center"
+                   android:text="ン \nn"
+                   android:textColor="#F44336" />
+
+               <Button
+                   android:layout_weight="1"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:background="#00000000"
+                   android:gravity="center" />
+
+               <Button
+                   android:layout_weight="1"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:background="#00000000"
+                   android:gravity="center" />
+
+               <Button
+                   android:layout_weight="1"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:background="#00000000"
+                   android:gravity="center" />
+
+               <Button
+                   android:layout_weight="1"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:background="#00000000"
+                   android:gravity="center" />
+           </TableRow>
+
+
+       </TableLayout>
+
+   </ScrollView>
+        <ScrollView
+            android:id="@+id/scrollview1"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+
+            <TableLayout
+
+                android:id="@+id/table"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:shrinkColumns="*">
+
+                <TableRow
+                    android:id="@+id/Bangchucai"
+                    android:weightSum="5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:layout_weight="1"
+                        android:id="@+id/A"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:gravity="center"
+                        android:text="あ \na"
+                        android:textColor="#F44336"
+
+                        />
+
+                    <Button
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/I"
+                        android:gravity="center"
+                        android:text="い \ni"
+                        android:textColor="#F44336" />
+
+                    <Button
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+android:id="@+id/U"
+                        android:gravity="center"
+                        android:text="う \nu"
+                        android:textColor="#F44336" />
+
+                    <Button
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+android:id="@+id/E"
+                        android:text="え \ne"
+                        android:textColor="#F44336" />
+
+                    <Button
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+android:id="@+id/O"
+                        android:text="お \no"
+                        android:textColor="#F44336" />
+                </TableRow>
+
+                <TableRow
+                    android:weightSum="5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+
+
+                    <Button
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+android:id="@+id/KA"
+                        android:gravity="center"
+                        android:text="か \nka"
+                        android:textColor="#F44336" />
+
+                    <Button
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+android:id="@+id/KI"
+                        android:gravity="center"
+                        android:text="き \nki"
+                        android:textColor="#F44336" />
+
+                    <Button
+                        android:layout_weight="1"
+                        android:id="@+id/KU"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="く \nku"
+                        android:textColor="#F44336" />
+
+                    <Button
+                        android:layout_weight="1"
+                        android:id="@+id/KE"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="け \nke"
+                        android:textColor="#F44336" />
+
+                    <Button
+                        android:layout_weight="1"
+                        android:id="@+id/KO"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="こ \nko"
+                        android:textColor="#F44336" />
+
+                </TableRow>
+
+                <TableRow
+                    android:weightSum="5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+
+                    <Button
+                        android:layout_weight="1"
+                        android:id="@+id/SA"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="さ \nsa"
+                        android:textColor="#F44336" />
+
+                    <Button
+                        android:layout_weight="1"
+                        android:id="@+id/SHI"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="し \nshi"
+                        android:textColor="#F44336" />
+
+                    <Button
+                        android:layout_weight="1"
+                        android:id="@+id/SU"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="す \nsu"
+                        android:textColor="#F44336" />
+
+                    <Button
+                        android:layout_weight="1"
+                        android:id="@+id/SE"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="せ \nse"
+                        android:textColor="#F44336" />
+
+                    <Button
+                        android:layout_weight="1"
+                        android:id="@+id/SO"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="そ \nso"
+                        android:textColor="#F44336" />
+                </TableRow>
+
+                <TableRow
+                    android:weightSum="5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+
+                    <Button
+                        android:layout_weight="1"
+                        android:id="@+id/TA"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="た \nta"
+                        android:textColor="#F44336" />
+
+                    <Button
+                        android:layout_weight="1"
+                        android:id="@+id/CHI"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="ち \nchi"
+                        android:textColor="#F44336" />
+
+                    <Button
+                        android:layout_weight="1"
+                        android:id="@+id/TSU"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="つ \ntsu"
+                        android:textColor="#F44336" />
+
+                    <Button
+                        android:layout_weight="1"
+                        android:id="@+id/TE"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="て \nte"
+                        android:textColor="#F44336" />
+
+                    <Button
+                        android:layout_weight="1"
+                        android:id="@+id/TO"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="と \nto"
+                        android:textColor="#F44336" />
+                </TableRow>
+
+                <TableRow
+                    android:weightSum="5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+
+                    <Button
+                        android:layout_weight="1"
+                        android:id="@+id/NA"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="な \nna"
+                        android:textColor="#F44336" />
+
+                    <Button
+                        android:layout_weight="1"
+                        android:id="@+id/NI"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="に \nni"
+                        android:textColor="#F44336" />
+
+                    <Button
+                        android:layout_weight="1"
+                        android:id="@+id/NU"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="ぬ \nnu"
+                        android:textColor="#F44336" />
+
+                    <Button
+                        android:layout_weight="1"
+                        android:id="@+id/NE"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="ね \nne"
+                        android:textColor="#F44336" />
+
+                    <Button
+                        android:layout_weight="1"
+                        android:id="@+id/NO"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="の \nno"
+                        android:textColor="#F44336" />
+                </TableRow>
+
+                <TableRow
+                    android:weightSum="5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+
+                    <Button
+                        android:layout_weight="1"
+                        android:id="@+id/HA"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="は \nha"
+                        android:textColor="#F44336" />
+
+                    <Button
+                        android:layout_weight="1"
+                        android:id="@+id/HI"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="ひ \nhi"
+                        android:textColor="#F44336" />
+
+                    <Button
+                        android:layout_weight="1"
+                        android:id="@+id/FU"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="ふ \nfu"
+                        android:textColor="#F44336" />
+
+                    <Button
+                        android:layout_weight="1"
+                        android:id="@+id/HE"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="へ \nhe"
+                        android:textColor="#F44336" />
+
+                    <Button
+                        android:layout_weight="1"
+                        android:id="@+id/HO"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="ほ \nho"
+                        android:textColor="#F44336" />
+                </TableRow>
+
+                <TableRow
+                    android:weightSum="5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+
+                    <Button
+                        android:layout_weight="1"
+                        android:id="@+id/MA"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="ま \nma"
+                        android:textColor="#F44336" />
+
+                    <Button
+                        android:layout_weight="1"
+                        android:id="@+id/MI"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="み \nmi"
+                        android:textColor="#F44336" />
+
+                    <Button
+                        android:layout_weight="1"
+                        android:id="@+id/MU"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="む \nmu"
+                        android:textColor="#F44336" />
+
+                    <Button
+                        android:layout_weight="1"
+                        android:id="@+id/ME"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="め \nme"
+                        android:textColor="#F44336" />
+
+                    <Button
+                        android:layout_weight="1"
+                        android:id="@+id/MO"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="も \nmo"
+                        android:textColor="#F44336" />
+                </TableRow>
+
+                <TableRow
+                    android:weightSum="5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+
+                    <Button
+                        android:layout_weight="1"
+                        android:id="@+id/YA"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="や \nya"
+                        android:textColor="#F44336" />
+
+                    <Button
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#00000000"
+                        android:gravity="center"
+                        android:textColor="#F44336" />
+
+                    <Button
+                        android:layout_weight="1"
+                        android:id="@+id/YU"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="や \nyu"
+                        android:textColor="#F44336" />
+
+                    <Button
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#00000000"
+                        android:gravity="center" />
+
+                    <Button
+                        android:layout_weight="1"
+                        android:id="@+id/YO"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="よ \nyo"
+                        android:textColor="#F44336" />
+
+                </TableRow>
+
+                <TableRow
+                    android:weightSum="5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+
+                    <Button
+                        android:layout_weight="1"
+                        android:id="@+id/RA"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="ら \nra"
+                        android:textColor="#F44336" />
+
+                    <Button
+                        android:layout_weight="1"
+                        android:id="@+id/RI"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="り \nri"
+                        android:textColor="#F44336"
+
+                        />
+
+                    <Button
+                        android:layout_weight="1"
+                        android:id="@+id/RU"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="る \nru"
+                        android:textColor="#F44336" />
+
+                    <Button
+                        android:layout_weight="1"
+                        android:id="@+id/RE"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="れ \nre"
+                        android:textColor="#F44336"
+
+                        />
+
+                    <Button
+                        android:layout_weight="1"
+                        android:id="@+id/RO"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="ろ \nro"
+                        android:textColor="#F44336" />
+
+                </TableRow>
+
+                <TableRow
+                    android:weightSum="5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+
+                    <Button
+                        android:layout_weight="1"
+                        android:id="@+id/WA"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="わ \nwa"
+                        android:textColor="#F44336" />
+
+                    <Button
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#00000000"
+                        android:gravity="center" />
+
+                    <Button
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#00000000"
+                        android:gravity="center" />
+
+                    <Button
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#00000000"
+                        android:gravity="center" />
+
+                    <Button
+                        android:layout_weight="1"
+                        android:id="@+id/WO"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="を \nwo"
+                        android:textColor="#F44336" />
+                </TableRow>
+
+                <TableRow
+                    android:weightSum="5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+
+                    <Button
+                        android:layout_weight="1"
+                        android:id="@+id/N"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="ん \nn"
+                        android:textColor="#F44336" />
+
+                    <Button
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#00000000"
+                        android:gravity="center" />
+
+                    <Button
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#00000000"
+                        android:gravity="center" />
+
+                    <Button
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#00000000"
+                        android:gravity="center" />
+
+                    <Button
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#00000000"
+                        android:gravity="center" />
+                </TableRow>
+
+
+            </TableLayout>
+
+        </ScrollView>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <Button
+            android:id="@+id/katakanabutton"
+            android:onClick="bt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#F44336"
+            android:layout_alignParentRight="true"
+            android:text="Katakana" />
+        <Button
+            android:id="@+id/hiraganabutton"
+            android:onClick="bt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#F44336"
+            android:layout_toLeftOf="@+id/katakanabutton"
+            android:text="hiragana" />
+
+    </RelativeLayout>
+
+</LinearLayout>
+
+
